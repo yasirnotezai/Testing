@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,121,9,1) 0%, rgba(6,59,160,1) 0%, rgba(0,212,255,1) 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-image: linear-gradient(to top left, #b5d43c,#ecff9f);
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0.01px 2px 10px #333;
+}
+
+.again{
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:#E67E22;
+    color: #fff;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.reset{
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:#16A085;
+    color: #fff;
+    position: relative;
+    left: 150px;
+    top: -8px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.secret-number{
+    position: relative;
+    left: 370px;
+    top: 46px;
+    background-color: #E67E22;
+    color: #fff;
+    width: 50px;
+    font-family: 'Roboto Mono', monospace;
+}
+.number{
+    text-align: center;
+}
+
+.underline{
+    position: relative;
+    top: 64px;
+    background-color: #E67E22;
+    color: #fff;
+    width: 800px;
+    height: 4px;
+    
+}
+
+.operation{
+    position: relative;
+    top: 50%;
+    left:10% ;
+    
+}
+
+.check-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:#E67E22;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+.guess-inp{
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.guess-inp::-webkit-inner-spin-button{
+    display: none;
+}
+
+.result-show{
+    position: relative;
+    left: 550px;
+    top: 150px;
+}
+
+.score-div{
+    margin-bottom: 6px;
+    
+}
+
+.h3-score, .h3-highscore{
+    background-color: #16A085;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.score,.highscore{
+    margin-left: 10px;
+    background-color: #E67E22;
+    color: #fff;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.message-div{
+    background-color: #E67E22;
+    width: 226px;
+    margin-bottom: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.message{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media(max-width:600px){
+
+    body{
+        
+    }
+
+
+    .container{
+        width: 400px;
+    }
+
+    .secret-number{
+        position: relative;
+        left: 170px;
+        top: 46px;
+        background-color: #E67E22;
+        color: #fff;
+        width: 50px;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+
+    .underline{
+        position: relative;
+        top: 64px;
+        background-color: #E67E22;
+        color: #fff;
+        width: 400px;
+        height: 4px;
+        
+    }
+
+
+    .result-show{
+        position: relative;
+        left: 150px;
+        top: 170px; 
+    }
+    .h3-score, .h3-highscore{
+        background-color: #16A085;
+        color: #fff;
+        font-size: 12px;
+        padding: 0 10px 0 10px;
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    .score,.highscore{
+        margin-left: 10px;
+        background-color: #E67E22;
+        color: #fff;
+        padding: 0 10px 0 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+    }
+    .message{
+        color: #fff;
+        font-size: 14px;
+        padding-left: 10px;
+        font-family: 'Roboto Mono', monospace;
+        
+        
+    }
+    .score-div{
+        margin-bottom: 2px;
+        margin-top: -10px;
+        
+    }
+}
